@@ -1,0 +1,5 @@
+---
+# defaults file for molecule_test
+
+# The webpage content
+molecule_test_webpage_content: Hello world!

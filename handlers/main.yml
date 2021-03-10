@@ -1,0 +1,9 @@
+---
+# handlers file for molecule_test
+
+- name: Start and enable webserver
+  ansible.builtin.service:
+    name: "{{ molecule_test_httpd_service }}"
+    state: restarted
+    enabled: yes
+  listen: restart_webserver

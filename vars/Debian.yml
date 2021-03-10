@@ -1,0 +1,6 @@
+---
+# vars file for molecule_test
+
+molecule_test_httpd_package: apache2
+molecule_test_httpd_service: apache2
+molecule_test_httpd_dir: /var/www/html
