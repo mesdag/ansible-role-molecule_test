@@ -11,6 +11,9 @@ metadata:
     - ansible
     - molecule
   icon: https://raw.githubusercontent.com/devicons/devicon/master/icons/ansible/ansible-original.svg
+attributes:
+  controller.devfile.io/storage-type: ephemeral
+  controller.devfile.io/scc: container-build
 projects:
   - name: ansible-role-molecule-test
     git:
@@ -20,6 +23,8 @@ components:
   - name: dev-tools
     container:
       image: quay.io/ucomesdag/developer-tools:latest
+      memoryLimit: 2Gi
+      memoryRequest: 256Mi
 commands:
   - id: lint
     exec:

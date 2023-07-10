@@ -4,3 +4,4 @@ exclude_paths:
   - meta/preferences.yml
   - molecule/
   - .github/
+  - .devfile.yaml

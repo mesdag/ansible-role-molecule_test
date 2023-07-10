@@ -1,0 +1,16 @@
+{
+  "image": "quay.io/ucomesdag/developer-tools:latest",
+  // "remoteUser": "user",
+  // "containerUser": "user",
+  // "updateRemoteUserUID": false,
+  // "workspaceFolder": "/workspaces/ansible-role-molecule-test",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.ansible",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}
