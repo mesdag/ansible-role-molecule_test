@@ -19,5 +19,5 @@
   ansible.builtin.copy:
     content: "{{ molecule_test_webpage_content }}"
     dest: "{{ molecule_test_httpd_dir }}/index.html"
-    mode: '0644'
+    mode: "0644"
   notify: restart_webserver

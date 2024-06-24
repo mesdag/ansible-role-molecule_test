@@ -5,5 +5,5 @@
   ansible.builtin.service:
     name: "{{ molecule_test_httpd_service }}"
     state: restarted
-    enabled: yes
+    enabled: true
   listen: restart_webserver

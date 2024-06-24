@@ -11,8 +11,8 @@ lint: |
 driver:
   name: podman
 platforms:
-  - name: "molecule_test-${TOX_ENVNAME:-local}"
-    image: "${MOLECULE_DISTRO:-quay.io/ucomesdag/fedora:latest}"
+  - name: molecule_test-${TOX_ENVNAME:-local}
+    image: ${MOLECULE_DISTRO:-quay.io/ucomesdag/fedora:latest}
     tmpfs:
       - /run
       - /tmp

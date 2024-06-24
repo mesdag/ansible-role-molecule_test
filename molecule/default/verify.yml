@@ -1,8 +1,8 @@
 ---
 - name: Verify
   hosts: all
-  gather_facts: no
-  become: no
+  gather_facts: false
+  become: false
 
   tasks:
     - name: Test connection
@@ -18,6 +18,6 @@
       ansible.builtin.uri:
         url: http://127.0.0.1/
         status_code: 200
-        return_content: yes
+        return_content: true
       register: result
       failed_when: "'Hello world!' not in result.content"
