@@ -1,0 +1,21 @@
+graph {
+
+  node [margin="0.05,0.09" height=0 width=0 shape=box fontname="Sans serif" fontsize="9.5"];
+
+  fontsize="8.5";
+  fontname="Sans serif";
+
+  label="ansible role dependencies";
+
+  layout=dot;
+  splines=compound;
+  concentrate=true;
+  center=treu;
+  dpi=300;
+
+  {
+    "ucomesdag.molecule_test"
+    "community.general" [style=filled fillcolor=grey85] [label=<community.general<BR /><FONT POINT-SIZE="8">collection</FONT>>]
+  }
+  "community.general" -- "ucomesdag.molecule_test"
+}
